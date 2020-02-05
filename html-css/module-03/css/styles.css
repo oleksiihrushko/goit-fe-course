@@ -1,9 +1,119 @@
-p {
-    color: green;
+html {
+    box-sizing: border-box;
 }
-/* font-family: 'Playfair Display', serif; */
-/* color: #626262;    text*/
-/* color: #03a9f4;    hover text*/
-.navigation {
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
 
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+/* Navigation */
+
+.nav {
+    font-size: 0;
+    margin: 70px 165px 100px;
+}
+
+.navigation {
+    width: 100%;
+    display: inline-block;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-li:not(:last-child) {
+    margin-right: 105px;
+}
+
+.nav-li {
+    font-size: 14px;
+    display: inline-block;
+}
+.navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #626262;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    color: #03a9f4;
+}
+
+/* Articles */
+
+.articles-list {
+    font-size: 0;
+}
+
+.article-item {
+    text-align: left;
+    display: inline-block;
+    width: 420px;
+    margin-bottom: 130px;
+}
+
+.article-item:nth-child(2n) {
+    margin-left: 60px;
+}
+
+.article-item:nth-last-child(-n + 2) {
+    margin-bottom: 55px;
+}
+
+.article-text {
+    font-size: 14px;
+    height: 70px;
+    text-align: left;
+    margin: 42px 0 0;
+    overflow: hidden;
+}
+
+.p1 {
+    margin: 30px 0;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+/* Button */
+
+.button {
+    margin: 0;
+    padding: 0;
+    width: 165px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.articles-list:last-child{
+    text-align: center;
+    margin-bottom: 70px;
 }
