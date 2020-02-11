@@ -8,48 +8,28 @@ html {
 }
 
 .container {
-    width: 900px;
+    width: 1110px;
     margin: 0 auto;
 }
 
 header {
-    padding-top: 70px;
-    padding-bottom: 100px;
 }
 
 body {
-    font-family: "Playfair Display", serif;
-    color: #626262;
-    font-size: 14px;
-    line-height: 24px;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    margin-bottom: 30px;
 }
 
 h2 {
-    margin: 0;
-    font-size: 30px;
-    line-height: 36px;
-    margin-bottom: 42px;
 }
 
 /* Navigation */
 
 .nav {
-    font-size: 0;
-    margin: 0;
 }
 
 .navigation {
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 .nav-li:not(:last-child) {
@@ -98,7 +78,9 @@ h2 {
 .article-text {
     margin: 0;
     font-size: 14px;
+    height: 70px;
     text-align: left;
+    overflow: hidden;
 }
 
 .p1 {
