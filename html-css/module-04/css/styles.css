@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
 }
+
 *, 
 *::before, 
 *::after {
@@ -12,84 +13,142 @@ html {
     margin: 0 auto;
 }
 
-header {
-}
+
 
 body {
+color: #555252;
 }
 
 img {
+
 }
 
+
+
 h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;    
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #515151;
+}
+
+h2::after {
+    /* Line */
+    content: "";
 }
 
 /* Navigation */
+header {
+    margin-bottom: 100px;
+}
 
 .nav {
+    text-align: center;
+    overflow: hidden;
+    height: auto;
 }
 
-.navigation {
+h1 {
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding-top: 33px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 300;
 }
 
-.nav-li:not(:last-child) {
-    margin-right: 105px;
+h1::first-letter {
+    color: #1abc9c;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.nav-ul {
+
+    margin: 0;
+    padding: 0;
+    padding-top: 42px;
+    float: right;
+    width: 465px;
 }
 
 .nav-li {
-    font-size: 14px;
     display: inline-block;
 }
-.navigation a {
+
+.nav-li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav-li a {
     display: block;
     text-transform: uppercase;
     text-decoration: none;
-    color: #626262;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 11px;
+    font-weight: 700;
+    color: #0f0101;
 }
 
-.navigation a:hover,
-.navigation a:focus {
-    color: #03a9f4;
+.nav-li a:hover,
+.nav-li a:focus {
+    color: #1abc9c;
 }
 
-/* Articles */
+/* Products */
 
-.articles-list {
+
+/* News */
+
+.news-list {
     font-size: 0;
     margin: 0;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
+}
+.news-title {
+    
 }
 
-.article-item {
+.blog-item {
     text-align: left;
     display: inline-block;
-    width: 420px;
-    margin-bottom: 130px;
+    width: 350px;
 }
 
-.article-item:nth-child(2n) {
-    margin-left: 60px;
+.blog-item:not(:last-child) {
+    margin-right: 30px;
 }
 
-.article-item:nth-last-child(-n + 3) {
-    margin-bottom: 55px;
-}
-
-.article-text {
-    margin: 0;
-    font-size: 14px;
-    height: 70px;
+.image-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
     text-align: left;
-    overflow: hidden;
 }
 
-.p1 {
+.image-description::after {
+    /* Line */
+    content: "";
+}
+
+.blog-text {
     margin: 0;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    font-family: "Ubuntu", sans-serif;
+    overflow: hidden;
+    text-align: left;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 26px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 /* Button */
@@ -101,13 +160,4 @@ h2 {
     font-size: 20px;
     line-height: 24px;
     cursor: pointer;
-}
-
-.button:hover,
-.button:focus {
-    color: #03a9f4;
-}
-
-.articles-list:last-child{
-    text-align: center;
 }
