@@ -1,4 +1,4 @@
-html {
+/* html {
     box-sizing: border-box;
 }
 
@@ -6,7 +6,7 @@ html {
 *::before, 
 *::after {
     box-sizing: inherit;
-}
+} */
 
 .container {
     width: 1110px;
@@ -20,44 +20,34 @@ color: #555252;
 }
 
 img {
-
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-
-
-h2 {
-    text-align: center;
-    margin: 0;
-    padding: 0;    
-    text-transform: uppercase;
-    font-size: 48px;
-    line-height: 32px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    color: #515151;
-}
-
-h2::after {
-    /* Line */
-    content: "";
+.clearfix {
+    overflow: hidden;
+    /* clear: both; */
+    /* display: table; */
 }
 
 /* Navigation */
 header {
     margin-bottom: 100px;
+    padding-top: 33px;
 }
 
 .nav {
-    text-align: center;
-    overflow: hidden;
-    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 1110px;
 }
 
 h1 {
     float: left;
     margin: 0;
     padding: 0;
-    padding-top: 33px;
+    height: 32px;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-size: 30px;
@@ -72,24 +62,24 @@ h1::first-letter {
 }
 
 .nav-ul {
-
-    margin: 0;
-    padding: 0;
-    padding-top: 42px;
     float: right;
     width: 465px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    padding-top: 7px;
+    list-style: none;
 }
 
 .nav-li {
-    display: inline-block;
+    float: left;
 }
 
 .nav-li:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 34px;
 }
 
 .nav-li a {
-    display: block;
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
@@ -104,23 +94,139 @@ h1::first-letter {
     color: #1abc9c;
 }
 
+/* Titles */
+
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #515151;
+}
+
+h2::after {
+    /* Line */
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    content: "";
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.products-title {
+    margin-bottom: 85px;
+}
+
+.news-title {
+    margin-bottom: 95px;
+}
+
 /* Products */
 
+.products-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 110px;
+}
+
+.product-item {
+    float: left;
+    width: 255px;
+    height: 322px;
+}
+
+.product-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.product-item:nth-last-child(n + 5) {
+    margin-bottom: 30px;
+}
+
+.product-item:hover .product-name {
+    background-color: #1abc9c;
+}
+
+.product-item:hover .product-price {
+    background-color: #7fd9c7;
+}
+
+.product-image {
+    height: 282px;
+    overflow: hidden;
+}
+
+.backgrndfix {
+    background-color: #e9f0fd;
+}
+
+.bag {
+    max-width: 200px;
+    margin: 15px auto 0;
+}
+
+.glasses {
+    max-width: 235px;
+    margin: 97px auto 0;
+}
+
+.product-footer {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    width: 255px;
+}
+
+.product-name {
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: #323232;
+}
+
+.product-name a {
+    padding-left: 15px;
+    line-height: 40px;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.product-price {
+    float: right;
+    width: 55px;
+    height: 40px;
+    background-color: #8c8c8c;
+}
+
+.product-price a {
+    padding-left: 15px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #ffffff;
+}
 
 /* News */
 
-.news-list {
-    font-size: 0;
+.news {
     margin: 0;
     padding-bottom: 80px;
 }
-.news-title {
-    
-}
+
+
 
 .blog-item {
+    float: left;
     text-align: left;
-    display: inline-block;
     width: 350px;
 }
 
@@ -128,7 +234,10 @@ h1::first-letter {
     margin-right: 30px;
 }
 
-.image-description {
+h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 26px;
@@ -136,9 +245,14 @@ h1::first-letter {
     text-align: left;
 }
 
-.image-description::after {
+h3::after {
     /* Line */
+    display: block;
+    width: 136px;
+    height: 3px;
+    background-color: #4ec6ab;
     content: "";
+    margin-top: 10px;
 }
 
 .blog-text {
@@ -149,15 +263,22 @@ h1::first-letter {
     line-height: 26px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 /* Button */
 
 .button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #4ec6ab;
     padding: 0;
-    width: 165px;
-    height: 60px;
-    font-size: 20px;
-    line-height: 24px;
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 26px;
     cursor: pointer;
+    border-style: none;
+    border-radius: 4px;
 }
