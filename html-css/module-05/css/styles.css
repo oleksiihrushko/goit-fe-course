@@ -108,7 +108,7 @@ header {
     color: var(--main-background-color);
 }
 
-                 /*   Slider   */
+                /*   Slider   */
 
 .slider-section {
   object-position: top;
@@ -352,17 +352,19 @@ header {
   font-size: 14px;
   font-weight: 400;
   line-height: 48px;
-  text-align: right;
   width: 170px;
   height: 48px;
 }
 
-.add-wrapper {
+/* .add-wrapper */
+.overlay-link {
   position: absolute;
   background-image: url(../images/icons/BUTTON_add.png);
-  background-position: left;
+  background-position: left 15px center;
   background-repeat: no-repeat;
-  width: 135px;
+  width: 100%;
+  text-align: right;
+  padding-right: 15px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -374,7 +376,6 @@ header {
 
 .add a {
   display: block;
-  width: 100%;
   color: var(--secondary-background-color);
 }
 
