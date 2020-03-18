@@ -1,6 +1,6 @@
 :root {
   --main-background-color: #1abc9c;
-  --secondary-backgroun-color: #ffffff;
+  --secondary-background-color: #ffffff;
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Open Sans', sans-serif;
 }
@@ -177,7 +177,7 @@ header {
   top: 50%;
   transform: translate(-50%, -50%);
   font-family: var(--main-font);
-  color: var(--secondary-backgroun-color);
+  color: var(--secondary-background-color);
 }
 
 .slider-content_title {
@@ -255,7 +255,7 @@ header {
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--secondary-backgroun-color);
+  color: var(--secondary-background-color);
 }
 
 .product-price {
@@ -272,7 +272,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--secondary-backgroun-color);
+  color: var(--secondary-background-color);
   line-height: 40px;
 }
 
@@ -346,7 +346,7 @@ header {
 .add {
   position: relative;
   border-width: 1px;
-  border-color: var(--secondary-backgroun-color);
+  border-color: var(--secondary-background-color);
   border-style: solid;
   font-family: var(--secondary-font);
   font-size: 14px;
@@ -375,7 +375,7 @@ header {
 .add a {
   display: block;
   width: 100%;
-  color: var(--secondary-backgroun-color);
+  color: var(--secondary-background-color);
 }
 
 
