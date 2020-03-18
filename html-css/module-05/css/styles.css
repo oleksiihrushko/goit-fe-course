@@ -26,7 +26,7 @@ ol {
   
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -34,10 +34,6 @@ img {
   content: "";
   clear: both;
   display: table;
-}
-
-.main-container {
-  width: 1600px;
 }
 
 .container {
@@ -111,29 +107,27 @@ header {
                 /*   Slider   */
 
 .slider-section {
-  object-position: top;
   position: relative;
-  height: 100%;
 }
 
 .slider-img {
- position: relative;
+  object-position: top;
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
 }
-
-.slider-overlay {
-  position: absolute;
+ 
+.slider-overlay::before {
+  position: absolute; 
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url(../images/slide1_overlay.jpg);
+  background-color: #323232;
   opacity: 0.52;
-  display: none;
-}
-
-.slider-section:hover .slider-overlay {
   display: block;
 }
+
 
 .slider-ctrl {
   position: absolute;
@@ -231,7 +225,6 @@ header {
   position: relative;
   float: left;
   width: 255px;
-  height: 324px;
 }
 
 .product-item:not(:last-child) {
@@ -239,40 +232,38 @@ header {
 }
 
 .product-footer {
-  position: relative;
   padding: 0;
   margin: 0;
-  font-family: var(--main-font);
-  font-weight: 900;
-  background-color: #323232;
-  height: 40px;
+  /* background-color: #323232; */
   width: 100%;
+  height: 40px;
 }
 
 .product-footer a {
-  display: block;
   padding-left: 6%;
   line-height: 40px;
+  font-family: var(--main-font);
+  font-weight: 900;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--secondary-background-color);
 }
 
+.product-name {
+  width: 100%;
+  height: 100%;
+  background-color: #323232;
+}
+
 .product-price {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 20%;
+  display: inline-block;
+  float: right;
+  width: 45px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.44);
 }
 
-.product-price p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--secondary-background-color);
+.product-price a {
   line-height: 40px;
 }
 
@@ -286,51 +277,51 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: calc(100% - 40px);
   border-width: 10px;
   border-color: rgba(255, 255, 255, 0.651);
   border-style: solid;
   background-color: rgba(0, 0, 0, 0.651);
   background-clip: padding-box;
   opacity: 0;
-  position: absolute;
-  width: 100%;
-  height: calc(100% - 40px);
 }
 
 .product-item:hover .overlay {
   opacity: 1;
 }
 
-.overlay-btn-wrapper {
-  position: absolute;
+.overlay-icons {
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 170px;
-  height: 110px;
 }
 
 .overlay-icons li {
   display: inline-block;
-}
-
-.overlay-icons li:not(:last-child) {
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.overlay-icon a {
-  display: block;
   float: left;
+}
+
+.overlay-icons button {
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.overlay-icon button {
+  /* display: block; */
   width: 48px;
   height: 48px;
   border-width: 1px;
   border-color: var(--secondary-background-color);
   border-style: solid;
+  background-color: transparent;
+  background-position: center;
 }
 
 
-.overlay-icon:hover {
+.overlay-icons button:hover {
   border-color: var(--main-background-color);
   background-color: var(--main-background-color);
 }
@@ -340,45 +331,38 @@ header {
 }
 
 .overlay-icon:nth-child(-n + 2) {
-  margin-right: 9px;
+  margin-right: 13px;
 }
 
-.add {
+.overlay-icon-last {
   position: relative;
-  border-width: 1px;
-  border-color: var(--secondary-background-color);
-  border-style: solid;
   font-family: var(--secondary-font);
   font-size: 14px;
   font-weight: 400;
   line-height: 48px;
   width: 170px;
   height: 48px;
-}
-
-/* .add-wrapper */
-.overlay-link {
-  position: absolute;
-  background-image: url(../images/icons/BUTTON_add.png);
-  background-position: left 15px center;
-  background-repeat: no-repeat;
-  width: 100%;
-  text-align: right;
-  padding-right: 15px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.add:hover {
   background-color: #323232;
 }
 
-.add a {
-  display: block;
+.add {
+  border-width: 1px;
+  border-color: var(--secondary-background-color);
+  border-style: solid;
   color: var(--secondary-background-color);
+  background-color: transparent;
+  background-image: url(../images/icons/BUTTON_add.png);
+  background-position: left 15px center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  padding-right: 15px;
 }
-
 
 .like {
   background-image: url(../images/icons/BUTTON_like.png);
