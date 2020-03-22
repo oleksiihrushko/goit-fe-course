@@ -1,6 +1,5 @@
 html {
     box-sizing: border-box;
-    color: #333333;
 }
   
 * {
@@ -33,6 +32,7 @@ img {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    color: #333333;
 }
 
 header {
@@ -182,7 +182,6 @@ nav {
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
-    color: #333333;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
@@ -232,7 +231,6 @@ nav {
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
-    color: #333333;
     text-transform: uppercase;
     margin-bottom: 12px;
 }
