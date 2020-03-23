@@ -1,0 +1,297 @@
+/* roboto-slab-regular - latin */
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* montserrat-regular - latin */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* montserrat-700 - latin */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* font-family: 'Noto Serif', serif; droid */
+
+
+/* font-family: 'Petit Formal Script', cursive; wisdom*/
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+/*  Navigation  */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #222222;
+}
+
+header {
+    padding: 36px 0 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.site_logo {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 26px;
+    line-height: 41px;
+    font-weight: 700;
+    color: #fed136;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.nav_item a {
+    position: relative;
+    font-size: 14px;
+    line-height: 41px;
+    font-weight: 400;
+    color: #222222;
+    text-transform: uppercase;
+    transition: color 200ms linear;
+}
+
+.nav_item a:hover {
+    color: #fed136;
+}
+
+
+/* Services */
+
+.services {
+    padding-bottom: 122px;
+}
+
+.services-title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 75px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.services-title_description {
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #777777;
+    text-align: center;
+    margin-bottom: 82px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-list__item {
+    flex-basis: 290px;
+    text-align: center;
+}
+
+.services-list__item::before {
+    content: '';
+    display: block;
+    width: 72px;
+    height: 72px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto 3px;
+    border-radius: 50%;
+    border: 3px solid #fed136;
+}
+
+.services-list__item:nth-child(1)::before {
+    background-image: url(../images/icons/Icon-Basket.png);
+}
+
+.services-list__item:nth-child(2)::before {
+    background-image: url(../images/icons/Icon-Laptop.png);
+}
+
+.services-list__item:nth-child(3)::before {
+    background-image: url(../images/icons/Icon-Locked.png);
+}
+
+.service-item_title {
+    font-size: 18px;
+    line-height: 75px;
+    letter-spacing: -0.45px;
+    font-weight: 700;
+    margin-bottom: -6px;
+}
+
+.services-list__item p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    color: #777777;
+}
+
+
+/*  Contacts  */
+
+.contacts {
+    padding: 106px 0 120px;
+    background-color: #222222;
+    background-image: url(../images/Map\ Image.png);
+    background-repeat: no-repeat;
+    background-position: top 120px right;
+    text-align: center;
+}
+
+.contacts-title {
+    font-size: 40px;
+    line-height: 56px;
+    color: #ffffff;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+}
+
+.contacts-title__description {
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-style: italic;
+    color: #777777;
+    margin-bottom: 76px;
+}
+
+.contact__form-input_area-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.contact__form-left_inputs-wrapper {
+    flex-basis: calc(50% - 15px);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form-input {
+    width: 100%;
+    height: 52px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 2px;
+    padding-left: 20px;
+}
+
+.contact__form-input:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.contact__form-input::placeholder,
+.contact__form-textarea::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    letter-spacing: -0.35px;
+    color: #bbbbbb;
+    text-transform: uppercase;
+}
+
+.contact__form-input:focus {
+    outline-offset: -1px;
+}
+
+.contact__form-input:required:focus:valid:not(:placeholder-shown) {
+    outline: 3px solid green;
+}
+
+.contact__form-input:required:focus:invalid:not(:placeholder-shown) {
+    outline: 3px solid red;
+}
+
+.contact__form-textarea {
+    flex-basis: calc(50% - 15px);
+    min-height: 212px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    resize: none;
+    padding: 18px 0 0 20px;
+}
+
+.contact__form-btn {
+    width: 240px;
+    height: 66px;
+    border: 0;
+    border-radius: 3px;
+    background-color: rgb(254, 209, 54);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+}
