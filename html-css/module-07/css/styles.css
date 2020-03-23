@@ -263,11 +263,13 @@ nav {
     outline-offset: -1px;
 }
 
-.contact__form-input:required:focus:valid:not(:placeholder-shown) {
+.contact__form-input:required:focus:valid:not(:placeholder-shown),
+.contact__form-textarea:required:focus:valid:not(:placeholder-shown) {
     outline: 3px solid green;
 }
 
-.contact__form-input:required:focus:invalid:not(:placeholder-shown) {
+.contact__form-input:required:focus:invalid:not(:placeholder-shown),
+.contact__form-textarea:required:focus:invalid:not(:placeholder-shown) {
     outline: 3px solid red;
 }
 
