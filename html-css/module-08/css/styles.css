@@ -140,20 +140,18 @@ nav button {
     margin-bottom: 14px;
 }
 
-.find-link-wrapper {
-    width: 280px;
-    height: 40px;
-    margin: 0 auto;
-    background-color: rgb(255, 78, 80);
-    border-radius: 20px;
-}
-
 .find-link {
+    margin: 0 auto;
+    display: block;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 40px;
     font-weight: 700;
     color: #ffffff;
+    width: 280px;
+    height: 40px;
+    background-color: rgb(255, 78, 80);
+    border-radius: 20px;
 }
 
 .container {
@@ -241,16 +239,14 @@ nav button {
     color: #666666;
 }
 
-.other-partnets__link-wrapper {
+.other-partners__link {
+    margin: 0 auto;
+    display: block;
     width: 280px;
     height: 44px;
-    margin: 0 auto;
     background-color: #ffffff;
     border-radius: 22px;
     border: 2px solid rgb(255, 78, 80);
-}
-
-.other-partners__link {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 40px;
@@ -298,7 +294,7 @@ nav button {
     .page-title__description span {
         display: inline-block;
     }
-    .find-link-wrapper {
+    .find-link {
         width: 226px;
     }
     .container {
@@ -338,9 +334,6 @@ nav button {
     }
     nav {
         width: 942px;
-    }
-    .find-link-wrapper {
-        width: 226px;
     }
     .container {
         width: 942px;
