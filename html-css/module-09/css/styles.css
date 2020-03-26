@@ -65,7 +65,7 @@ header {
   min-width: 100%;
 }
 
-header span {
+span {
   display: block;
 }
 
@@ -141,6 +141,10 @@ header span {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   color: #333333;
+}
+
+.partners-item {
+  max-width: 300px;
 }
 
 .partners-title {
