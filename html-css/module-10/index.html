@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module-10_HW</title>
-    <link href="css/reset.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400&display=swap" rel="stylesheet">
@@ -18,27 +17,26 @@
         <nav class="container">
             <div class="nav-wrapper">
                 <a href="#" class="site-logo">MoGo</a>
-                <ul class="nav-list">
-                    <li class="nav-list__item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-list__item"><a class="nav-link" href="#">Service</a></li>
-                    <li class="nav-list__item"><a class="nav-link" href="#">Work</a></li>
-                    <li class="nav-list__item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-list__item"><a class="nav-link" href="#">Contact</a></li>
-                    <li class="nav-list__item">
-                        <a class="icon-link" href="#">
-                            <svg>
-                                <use href="./images/icons/sprite.svg#cart"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a class="icon-link" href="#">
-                            <svg>
-                                <use href="./images/icons/sprite.svg#glass"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                <div class="nav-with-btns-wrapper">
+                    <ul class="nav-list">
+                        <li class="nav-list__item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-list__item"><a class="nav-link" href="#">Service</a></li>
+                        <li class="nav-list__item"><a class="nav-link" href="#">Work</a></li>
+                        <li class="nav-list__item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-list__item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                    <button class="nav-btn">
+                        <svg>
+                            <use href="./images/icons/sprite.svg#cart"></use>
+                        </svg>
+                    </button>
+                    <button class="nav-btn">
+                        <svg>
+                            <use href="./images/icons/sprite.svg#glass"></use>
+                        </svg>
+                    </button>
+                </div>
+
             </div>
             <h1 class="section-title header-title">
                 <span class="section-title--stylized header-title--stylized">Creative Tamplate</span>
