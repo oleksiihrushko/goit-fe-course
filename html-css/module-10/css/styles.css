@@ -62,12 +62,12 @@ body {
   font-weight: 700;
 }
 
-.ul-with-btns-wrapper {
+.nav-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.ul-with-btns-wrapper *:not(:last-child) {
+.nav-wrapper *:not(:last-child) {
   margin-right: 54px;
 }
 
