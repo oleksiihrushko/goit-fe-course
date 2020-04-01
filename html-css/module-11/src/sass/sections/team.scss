@@ -1,0 +1,122 @@
+/*   Team   */
+
+.team {
+  padding: 50px 0 84px;
+
+  &__title {
+    @extend .services__title;
+
+    &::after {
+      @extend .services__title::after;
+    }
+
+    &--stylized {
+      @extend .services__title--stylized;
+    }
+
+    &--description {
+      @extend .services__item--description;
+
+      padding: 0 110px 90px;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    text-align: center;
+    flex-basis: 380px;
+
+    &--image-wrapper {
+      position: relative;
+      margin-bottom: 30px;
+      transition: all 0.2s linear;
+    }
+
+    &--name {
+      @include font(14px, 17px, 400);
+
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    &--occupation {
+      @include font(15px, 24px, 300, $secondary-font);
+
+      font-style: italic;
+      color: $description-color;
+    }
+
+    &:hover {
+      .social-overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+      .team__item--image-wrapper {
+        transform: translate(-10px, -10px);
+        box-shadow: 10px 10px $overlay-shadow-color;
+      }
+    }
+  }
+}
+
+.social-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: $overlay-bgrnd-gradient;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      border-right: 1px solid transparent;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background-color: $main-bgrnd-color;
+
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: $underline-color;
+
+      svg {
+        fill: $secondary-text-color;
+      }
+    }
+
+    svg {
+      width: 50%;
+      height: 50%;
+      fill: $underline-color;
+
+      transition: all 0.2s linear;
+    }
+  }
+}

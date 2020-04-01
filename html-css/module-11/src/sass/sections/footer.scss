@@ -1,0 +1,47 @@
+/*  Footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  border-top: 1px solid $footer-border-color;
+
+  &-link {
+    color: $underline-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.subscribe-form {
+  display: flex;
+
+  &__input {
+    width: 234px;
+    height: 44px;
+    padding-left: 12px;
+    border: 1px solid $footer-border-color;
+    font-style: italic;
+
+    &::placeholder {
+      color: $footer-border-color;
+    }
+  }
+
+  &__btn {
+    width: 150px;
+    height: 44px;
+    border: 0;
+    background-color: $overlay-shadow-color;
+
+    @include font(14px, 17px, 700);
+
+    color: $secondary-text-color;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+  }
+}

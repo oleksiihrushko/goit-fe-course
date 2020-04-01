@@ -1,0 +1,121 @@
+/*  Services  */
+
+.services {
+  padding: 54px 0 50px;
+
+  &__title {
+    @extend %section__title;
+
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 64px;
+
+    &::after {
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: $underline-color;
+      content: '';
+      margin: 0 auto;
+      margin-top: 42px;
+    }
+
+    &--stylized {
+      @extend %section__title--stylized;
+      font-size: 24px;
+      line-height: 29px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__item {
+    position: relative;
+    flex-basis: 380px;
+    padding-left: 80px;
+
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 98px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 80px;
+      height: 32px;
+    }
+
+    &--icon-alarm::before {
+      background-image: url(../images/icons/alarm.png);
+    }
+
+    &--icon-linegraph::before {
+      background-image: url(../images/icons/linegraph.png);
+    }
+
+    &--icon-pc::before {
+      background-image: url(../images/icons/pc.png);
+    }
+
+    &--icon-book::before {
+      background-image: url(../images/icons/book.png);
+    }
+
+    &--icon-home::before {
+      background-image: url(../images/icons/home.png);
+    }
+
+    &--icon-image::before {
+      background-image: url(../images/icons/image.png);
+    }
+
+    &--title {
+      @include font(14px, 17px, 400);
+
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    &--description {
+      @include font(15px, 24px, 400, $secondary-font);
+
+      color: $description-color;
+    }
+  }
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .services__item--icon-alarm::before {
+    background-image: url(../images/icons/alarm@2x.png);
+  }
+
+  .services__item--icon-linegraph::before {
+    background-image: url(../images/icons/linegraph@2x.png);
+  }
+
+  .services__item--icon-pc::before {
+    background-image: url(../images/icons/pc@2x.png);
+  }
+
+  .services__item--icon-book::before {
+    background-image: url(../images/icons/book@2x.png);
+  }
+
+  .services__item--icon-home::before {
+    background-image: url(../images/icons/home@2x.png);
+  }
+
+  .services__item--icon-image::before {
+    background-image: url(../images/icons/image@2x.png);
+  }
+}

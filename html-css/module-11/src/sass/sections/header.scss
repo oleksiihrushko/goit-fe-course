@@ -1,0 +1,139 @@
+/*  Header  */
+
+/*  Navigation  */
+
+.header {
+  padding: 22px 0 230px;
+  background-image: $overlay-bgrnd-gradient, url(../images/headimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__title {
+    @extend %section__title;
+
+    font-size: 150px;
+    line-height: 150px;
+    color: $secondary-text-color;
+    margin: 0 auto 92px;
+    max-width: 820px;
+
+    &--stylized {
+      @extend %section__title--stylized;
+
+      font-size: 72px;
+      line-height: 86px;
+
+      padding-bottom: 28px;
+    }
+  }
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    padding: 22px 0 230px;
+    background-image: $overlay-bgrnd-gradient, url(../images/headimage@2x.jpg);
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 152px;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    & > *:not(:last-child) {
+      margin-right: 54px;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 54px;
+  }
+
+  &__link {
+    position: relative;
+
+    @include font(14px, 17px, 400);
+
+    text-transform: uppercase;
+    transition: color 200ms linear;
+
+    &:hover {
+      color: $main-bgrnd-color;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &::after {
+      display: block;
+      content: '';
+      margin-top: 12px;
+      width: auto;
+      height: 3px;
+      transition: all 0.2s linear;
+      background-color: $main-bgrnd-color;
+      opacity: 0;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: all 0.2s linear;
+
+    svg {
+      max-height: 100%;
+      fill: $secondary-text-color;
+
+      transition: all 0.2s linear;
+    }
+
+    &:hover svg {
+      fill: $main-bgrnd-color;
+    }
+  }
+}
+
+.site-logo {
+  @include font(30px, 36px, 700);
+}
+
+/* Heaeder link */
+
+.more-link {
+  margin: 0 auto;
+  display: block;
+  width: 164px;
+  height: 44px;
+  border: 3px solid $secondary-text-color;
+  background-color: transparent;
+
+  @include font(14px, 40px, 700, $main-font);
+
+  color: $secondary-text-color;
+  text-align: center;
+  text-transform: uppercase;
+
+  transition: all 0.2s linear;
+
+  &:hover {
+    border-color: $main-bgrnd-color;
+    color: $main-bgrnd-color;
+  }
+}
